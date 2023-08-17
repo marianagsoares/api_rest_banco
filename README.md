@@ -37,9 +37,9 @@ $ npm run dev
 
 |Métodos |  Endpoint             |      Rotas             | Status |
 | ------ | -------------         | -----------------------| ------ |
-| POST   | transcoes/depositar   |  Depositar             |  200   |
-| POST   | transcoes/sacar       |  Sacar                 |  200   |
-| POST   | transcoes/transferir  |  Transferir            |  200   |
+| POST   | transacoes/depositar   |  Depositar             |  200   |
+| POST   | transacoes/sacar       |  Sacar                 |  200   |
+| POST   | transacoes/transferir  |  Transferir            |  200   |
 | GET    | contas/saldo          |  Saldo                 |  200   |
 | GET    | contas/extrato        |  Extrato               |  200   |
 

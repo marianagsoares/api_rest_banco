@@ -1,4 +1,3 @@
-# api_rest_banco
 
 <div align=center>    
    <img src="./src//assets/cubos_logo.png" width="100" height="100">
@@ -25,21 +24,21 @@ $ npm run dev
 ```
  ### 💰 Rotas CRUD de contas bancárias
 
-|Métodos |  Endpoint      |      Rotas             | Status |
-| ------ | -------------  | -----------------------| ------ |
-| GET    | /contas        |  Listar contas         |   200  |  
-| GET    | /contas/:id    |  Listar contas por id  |   200  |
-| POST   | /contas        |  Criar conta           |   201  |
-| PUT    | /contas/:id    |  Editar conta por id   |   200  |  
-| DELETE | /contas/:id    |  Deletar conta por id  |   204  |
+|Métodos |  Endpoint                  |      Rotas             | Status |
+| ------ | -------------------------- | ---------------------- | ------ |
+| GET    | /contas                    |  Listar contas         |   200  |  
+| GET    | /contas/:numero            |  Listar contas por id  |   200  |
+| POST   | /contas                    |  Criar conta           |   201  |
+| PUT    | /contas/:numero/usuario    |  Editar conta por id   |   200  |  
+| DELETE | /contas/:numero            |  Deletar conta por id  |   204  |
 
  ### 💸 Rotas de operações bancárias
 
 |Métodos |  Endpoint             |      Rotas             | Status |
 | ------ | -------------         | -----------------------| ------ |
-| POST   | transacoes/depositar   |  Depositar             |  200   |
-| POST   | transacoes/sacar       |  Sacar                 |  200   |
-| POST   | transacoes/transferir  |  Transferir            |  200   |
+| POST   | transcoes/depositar   |  Depositar             |  200   |
+| POST   | transcoes/sacar       |  Sacar                 |  200   |
+| POST   | transcoes/transferir  |  Transferir            |  200   |
 | GET    | contas/saldo          |  Saldo                 |  200   |
 | GET    | contas/extrato        |  Extrato               |  200   |
 

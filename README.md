@@ -8,6 +8,7 @@
 
  ## 📚 Sobre
 <p>Essa é uma API REST foi desenvolvida com o propósito de alcançar a aprovação no segundo desafio do Bootcamp com ênfase em Backend da Cubos Academy. Seu escopo abrange os conteúdos ministrados durante as aulas do módulo 2 do programa, evidenciando uma aplicação prática dos conhecimentos adquiridos.</</p>
+<p>Este projeto exibe apenas um commit, já que o repositório original é privado e de propriedade da Cubos Academy. Portanto, como forma de armazenar em um repositório público o trabalho desenvolvido por mim, foi essencial criar um novo repositório e transferir o código para ele.</p>
 
 ## 📌 Passos para executar o projeto
 ```bash

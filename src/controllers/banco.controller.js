@@ -6,7 +6,10 @@ const { verificarSeContaExiste, buscarContaCadastrada } = require("../utils/veri
 const verificarCamposObrigatorios = require("../utils/verificarCamposObrigatorios");
 
 const listarContas = (req, res) => {
-  return res.status(200).send(bancoDeDados);
+  if(bancoDeDados.contas.length === 0)
+    return res.status(404).send({ message: "Esse banco não possui contas registradas" });
+
+  return res.status(200).send(bancoDeDados.contas);
 };
 
 const criarConta = (req, res) => {
@@ -17,7 +20,7 @@ const criarConta = (req, res) => {
   if (!camposObrigatoriosPreenchidos)
     return res.status(400).send({ message: "Preencha os campos obrigatórios antes de enviar a requisição para criar a conta"});
 
-  if(usuario.cpf.length < 11)
+  if(usuario.cpf.length !== 11)
     return res.status(200).send({ message: "O CPF precisa conter 11 dígitos" });
 
   const emailCadastrado = verificarSeEmailCadastrado(bancoDeDados.contas,usuario);
@@ -61,7 +64,7 @@ const editarConta = (req, res, next) => {
   if (!camposObrigatoriosPreenchidos)
     return res.status(400).send({ message: "Preencha os campos obrigatórios antes de criar a conta" });
 
-  if(usuario.cpf.length < 11)
+  if(usuario.cpf.length !== 11)
     return res.status(200).send({ message: "O CPF precisa conter 11 dígitos" });
 
   const emailEncontrado = buscarEmailCadastrado(bancoDeDados.contas, usuario);

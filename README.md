@@ -28,7 +28,6 @@ $ npm run dev
 |Métodos |  Endpoint                  |      Rotas             | Status |
 | ------ | -------------------------- | ---------------------- | ------ |
 | GET    | /contas                    |  Listar contas         |   200  |  
-| GET    | /contas/:numero            |  Listar contas por id  |   200  |
 | POST   | /contas                    |  Criar conta           |   201  |
 | PUT    | /contas/:numero/usuario    |  Editar conta por id   |   200  |  
 | DELETE | /contas/:numero            |  Deletar conta por id  |   204  |
